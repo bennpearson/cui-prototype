@@ -1,0 +1,253 @@
+<html lang="en">
+    <head>
+
+        <!-- file to overwrite Conversational Form styles -->
+		<link rel="stylesheet" href="dist/styles.css">
+    </head>
+    <body class="dark-theme">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.83/dist/conversational-form.min.js" crossorigin></script>
+
+        <form id="form">
+                <fieldset>
+                  <label for="name">Postcode</label>
+                  <input required cf-questions="What's your postcode?" type="text" class="form-control" name="name" id="name" />
+                </fieldset>
+              
+                <fieldset>
+                  <label for="address">Address</label>
+                  <div class="radio">
+                    <label>
+                        <input cf-questions="Please select your address" cf-input-placeholder="Type to filter list" type="radio" name="address" id="address-1" value="G B G Loqate Waterside Basin Road Worcester">
+                            G B G Loqate Waterside Basin Road Worcester
+                        </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                        <input type="radio" name="address" id="address-2" value="Lock Keepers Cottage Basin Road Worcester">
+                            Lock Keepers Cottage Basin Road Worcester
+                        </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="address" id="address-3" value="Lock View Basin Road Worcester">
+                                Lock View Basin Road Worcester
+                          </label>
+                  </div>  
+                </fieldset>
+              
+                <fieldset>
+                  <label for="company">Home Phone</label>
+                  <input required cf-questions="What's your home phone number?" type="number" class="form-control" name="company" id="company">
+                </fieldset>
+
+                <fieldset>
+                    <label for="company">Mobile Phone</label>
+                    <input cf-questions="What's your home mobile number? (Optional)" type="number" class="form-control" name="company" id="company">
+                </fieldset>
+
+                <fieldset>
+                    <label for="occupation">Occupation</label>
+                    <select cf-questions="What is your Occupation" name="occupation" id="occupation" class="form-control">
+                        <option></option>
+                        <option>designer</option>
+                        <option>ux researcher</option>
+                        <option>ux</option>
+                        <option>ux designer</option>
+                        <option>product designer</option>
+                        <option>ui designer</option>
+                        <option>interaction designer</option>
+                        <option>ixd</option>
+                        <option>frontend</option>
+                        <option>fed</option>
+                        <option>fender</option>
+                        <option>frontender</option>
+                        <option>frontend designer</option>
+                        <option>frontend developer</option>
+                        <option>frontend engineer</option>
+                        <option>clientside designer</option>
+                        <option>clientside developer</option>
+                        <option>clientside engineer</option>
+                        <option>software engineer</option>
+                        <option>developer</option>
+                        <option>builder</option>
+                        <option>caretaker</option>
+                        <option>etcher</option>
+                        <option>film director</option>
+                        <option>gardener</option>
+                        <option>healer</option>
+                        <option>inspector</option>
+                        <option>judge</option>
+                        <option>key cutter</option>
+                        <option>labourer</option>
+                        <option>manger</option>
+                        <option>navigator</option>
+                        <option>operator</option>
+                    </select>
+                </fieldset>
+
+                <cf-robot-message cf-questions="Please confirm the following details about Jane Doe"></cf-robot-message>
+
+                <fieldset>
+                    <label for="relationship">relationship</label>
+                    <div class="radio">
+                        <label>
+                            <input cf-questions="What is Jane Doe relationship to you" type="radio" name="relationship" id="relationship-1" value="Wife">
+                                Wife
+                            </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="relationship" id="relationship-2" value="Civil law partner">
+                                Civil law partner
+                            </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="relationship" id="relationship-3" value="Common law partner">
+                            Common law partner
+                        </label>
+                    </div>  
+                </fieldset>
+              
+                <fieldset>
+                        <label for="underwriting">Choose underwriting</label>
+                        <select cf-questions="The policy you have selected has a choice of underwriting options. Please read the choices carefully as they can affect your cover for particular conditions in the future. The choice of underwriting does not affect the price. If you are unclear about which choice to take, please call us on 0800 862 0373 and we will be happy to assist you.&&MORATORIUM UNDERWRITING: 
+
+If you choose this underwriting option, you do not need to complete any questions concerning your health at the point of application, however, you will not be covered for any claims made in respect of pre-existing conditions during the first two years of the policy, for which you have received treatment and/or medication, or asked advice on, or had symptoms of whether or not diagnosed, during the five years immediately before your policy started with us.
+
+Conditions that arise after the policy commencement date, but are related to the pre-existing condition will also be excluded.
+
+If you have:
+experienced symptoms,
+sought treatment,
+taken medication,
+asked for or gained advice, or
+needed treatment,
+in the 2 years after the policy commencement date, then you will have to wait until you have completed a continuous 2 year period where you have not;
+  experienced symptoms,
+  sought treatment,
+  taken medication,
+  asked for or gained advice, or needed treatment,
+  in order for the medical condition or related medical condition will be considered for coverage.
+  
+(insurer's definition)&&FULL MEDICAL UNDERWRITING:
+
+This is a type of underwriting where we ask you to complete a number of questions about your health.
+
+We will review this information and decide what cover we can offer you. If necessary we may ask your General Practitioner to provide more information to help us do this.
+
+If you have any pre-existing conditions that may need treatment in the future, we will usually exclude it from the cover along with any condition related to it.
+
+If you agree to the policy terms we are offering you, any exclusion we apply will be shown on your certificate of insurance and will start from your commencement date. In some cases we will advise you that an exclusion can be reviewed at your request after a specific time period, after the policy has started. Please note that if we offer to review an exclusion, this does not automatically mean that the exclusion will be removed.
+
+With full medical underwriting new acute medical conditions arising after the start of your policy will be covered immediately subject to the policy terms and conditions.
+
+A fully medically underwritten policy does not cover medical conditions that you and your dependants already had prior to the policy commencement date, including any related conditions that have not been disclosed and accepted by us.
+
+It is essential that you give us all the information we ask for, even if you have symptoms that have not been diagnosed. If you don’t, we will not pay any claim that you make in the future, or may even cancel your policy. If you are not sure whether or not to mention something, you should do so.
+
+(insurer's definition) " name="underwriting" id="underwriting" class="form-control">
+                    <option></option>
+                    <option>Moratorium Underwriting</option>
+                    <option>Full Medical Underwriting</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="payment">payment</label>
+                    <div class="radio">
+                        <label>
+                            <input cf-questions="How would you like to pay for this policy?" type="radio" name="payment" id="payment-1" value="Annually - £2502.69">
+                                Annually - £2502.69
+                            </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="payment" id="payment-2" value="Monthly - £221.87 (total cost over 12 months £2662.44)">
+                                Monthly - £221.87 (total cost over 12 months £2662.44)
+                            </label>
+                    </div> 
+                </fieldset>
+
+                <fieldset cf-questions="Are you the account holder" >
+                    <legend>Account holder</legend>
+                    <label>
+                        <input type="radio" id="account-holder-1" value="Yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" id="account-holder-2" value="No">
+                        No
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <label for="account-holder-name">Account holder name</label>
+                    <input required cf-questions="Names(s) of account holder(s):" type="text" class="form-control" name="account-holder-name" id="account-holder-name">
+                </fieldset>
+
+                <fieldset>
+                    <label for="sort-code">Sort code:</label>
+                    <input required cf-questions="Sort code:" type="number" class="form-control" name="sort-code" id="sort-code">
+                </fieldset>
+
+                <fieldset>
+                    <label for="account-number">Account number:</label>
+                    <input required cf-questions="Account number:" type="number" class="form-control" name="account-number" id="account-number">
+                </fieldset>
+
+
+
+
+                <fieldset cf-questions="We need to call you to complete the underwriting process
+
+The policy you have selected requires us to go through some underwriting questions relating to your health and your lifestyle.
+
+You will not need to fill out a form - your application can be completed over the phone in a short amount of time.
+                
+Please tell us when you would like us to call you, and an adviser will be touch.
+                
+Alternatively, please call us on 0800 862 0017 to discuss your underwriting at your earliest convenience. Our office hours are Monday to Thursday 9am to 8pm, Friday 9am to 5:30pm and Saturday 10am to 2pm." >
+                
+                    <legend>Best time to call</legend>
+                    <label>
+                        <input type="radio" id="call-time-1" name="call-time" value="As soon as possible">
+                        As soon as possible
+                    </label>
+                    <label>
+                        <input type="radio" id="call-time-2" name="call-time" value="Morning - 8am to midday">
+                        Morning - 8am to midday
+                    </label>
+                    <label>
+                        <input type="radio" id="call-time-2" name="call-time" value="Afternoon - midday to 5pm">
+                        Afternoon - midday to 5pm
+                    </label>
+                    <label>
+                        <input type="radio" id="call-time-2" name="call-time" value="Evening - 5pm to 8pm">
+                        Evening - 5pm to 8pm
+                    </label>
+                </fieldset>
+              
+                <cf-robot-message cf-questions="Thank You. One of our advisers will contact you in the time period you have specified 👋"></cf-robot-message>
+              
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+              <div id="cf-context" class="dark-theme" role="cf-context" cf-context></div>
+        <script>
+            var conversationalForm = window.cf.ConversationalForm.startTheConversation({
+                formEl: document.getElementById("form"),
+                context: document.getElementById("cf-context"),
+                userImage: "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMjAgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3MS4wMDAwMDAsIC02MTAuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyNzQuMDAwMDAwLCA1OTkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjEwNyAxMSAxMTcgMjcgOTcgMjciPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+                robotImage:
+                    "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzY0LjAwMDAwMCwgLTUzMC4wMDAwMDApIiBmaWxsPSIjMjIyMjIyIj4KICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzUzLjAwMDAwMCwgNTE5LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHJlY3QgeD0iMTEiIHk9IjExIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiPjwvcmVjdD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+                submitCallback: function() {
+                    alert(
+                    "Custom submit callback reached, removing Conversational Form, see markup of this file"
+                    );
+                }
+            });
+        </script>
+    </body>
+</html>
